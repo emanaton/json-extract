@@ -1,5 +1,5 @@
 {
-  "name": "ronolo/json-extract",
+  "name": "emanaton/json-extract",
   "description": "Extracts JSON from strings and returns PHP arrays.",
   "license": "MIT",
   "type": "library",
