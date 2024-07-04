@@ -160,21 +160,24 @@ class JsonExtractorService
      */
     private function decodeJson(int $startPosition, int $endPosition)
     {
-        $json = substr($this->string, $startPosition, $endPosition - $startPosition + 1);
+        $substr = substr($this->string, $startPosition, $endPosition - $startPosition + 1);
 
-        $return = json_decode($json, JSON_OBJECT_AS_ARRAY);
+        $json = json_decode($substr, JSON_OBJECT_AS_ARRAY);
 
-        if (!$return) {
-            $return = \CJSON::decode($json);
+        if (!$json) {
+            $json = \CJSON::decode($substr);
 
-            if (!$return || is_array($return) && !count(array_filter($return))) {
+            if (!$json || is_array($json) && !count(array_filter($json))) {
                 $errorMessage = json_last_error_msg();
 
                 throw new JsonExtractorException($errorMessage);
             }
         }
 
-        return $return;
+        return [
+          'substr' => $substr,
+          'json' => $json,
+        ];
     }
 
     /**
