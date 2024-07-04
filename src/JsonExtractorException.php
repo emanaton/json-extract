@@ -1,5 +1,5 @@
 <?php
 
-namespace RoNoLo\JsonExtractor;
+namespace emanaton\JsonExtractor;
 
 class JsonExtractorException extends \Exception {}

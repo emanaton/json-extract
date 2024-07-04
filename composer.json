@@ -3,7 +3,7 @@
   "description": "Extracts JSON from strings and returns PHP arrays.",
   "license": "MIT",
   "type": "library",
-  "homepage": "https://github.com/ronolo/json-extract",
+  "homepage": "https://github.com/emanaton/json-extract",
   "authors": [
     {
       "name": "Ronald Locke"
@@ -18,12 +18,12 @@
   },
   "autoload": {
     "psr-4": {
-      "RoNoLo\\JsonExtractor\\": "src/"
+      "emanaton\\JsonExtractor\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "RoNoLo\\JsonExtractor\\Tests\\": "tests/src/"
+      "emanaton\\JsonExtractor\\Tests\\": "tests/src/"
     }
   }
 }

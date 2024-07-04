@@ -1,8 +1,8 @@
 <?php
 
-namespace RoNoLo\JsonExtractor;
+namespace emanaton\JsonExtractor;
 
-use RoNoLo\JsonExtractor\JsonExtractorException;
+use emanaton\JsonExtractor\JsonExtractorException;
 
 include_once __DIR__ . '/CJSON.php';
 
@@ -23,7 +23,7 @@ class JsonExtractorService
      *
      * @return array
      *
-     * @throws \RoNoLo\JsonExtractor\JsonExtractorException
+     * @throws \emanaton\JsonExtractor\JsonExtractorException
      */
     public function extractJsonAfterIdentifier(string $identifier, string $text)
     {
@@ -53,7 +53,7 @@ class JsonExtractorService
      *
      * @return array
      *
-     * @throws \RoNoLo\JsonExtractor\JsonExtractorException
+     * @throws \emanaton\JsonExtractor\JsonExtractorException
      */
     public function extractAllJsonData(string $text)
     {

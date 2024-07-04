@@ -1,6 +1,6 @@
 <?php
 
-namespace RoNoLo\JsonExtractor;
+namespace emanaton\JsonExtractor;
 
 use PHPUnit\Framework\TestCase;
 

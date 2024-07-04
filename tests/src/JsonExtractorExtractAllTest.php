@@ -1,9 +1,9 @@
 <?php
 
-namespace RoNoLo\JsonExtractor;
+namespace emanaton\JsonExtractor;
 
 use PHPUnit\Framework\TestCase;
-use RoNoLo\JsonExtractor\JsonExtractorException;
+use emanaton\JsonExtractor\JsonExtractorException;
 
 class JsonExtractorExtractAllTest extends TestCase
 {

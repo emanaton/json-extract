@@ -8,7 +8,7 @@ There are two functions which will achieve that.
 ## Installation
 
 ```bash
-composer require ronolo/json-extract
+composer require emanaton/json-extract
 ```
 
 If that does not work, you may have to add the repository to the top level 
@@ -19,7 +19,7 @@ composer.json like this:
   "repositories": [
      {
         "type": "vcs",
-        "url":  "https://github.com/ronolo/json-extract.git"
+        "url":  "https://github.com/emanaton/json-extract.git"
     }
   ]
 }
@@ -29,7 +29,7 @@ composer.json like this:
 
 ```php
 <?php
-use RoNoLo\JsonExtractor\JsonExtractorService; 
+use emanaton\JsonExtractor\JsonExtractorService; 
  
 $jsonExtractor = new JsonExtractorService();
  
@@ -44,7 +44,7 @@ be returned as PHP array.
  
 ```php
 <?php
-use RoNoLo\JsonExtractor\JsonExtractorService; 
+use emanaton\JsonExtractor\JsonExtractorService; 
  
 $jsonExtractor = new JsonExtractorService();
  
